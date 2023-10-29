@@ -1,6 +1,6 @@
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
-require('dotenv').config();
+dotenv.config();
 
 const mysqlConn = mysql.createConnection(process.env.DATABASE_URL!);
 
