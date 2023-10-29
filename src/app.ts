@@ -4,7 +4,7 @@ import mysqlConn from './database/database-MySQL';
 import routes from './routes/routes';
 import cors from 'cors';
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(morgan('dev'));
